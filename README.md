@@ -11,4 +11,4 @@
 
 - _Unicamente presiona el link que te dejo abajo_
 
-[Ver Proyecto](https://aricanomx.github.io/PM-MaquetacionCSS/)
+[Ver Proyecto](https://aricanomx.github.io/PM-Reto-MaquetacionCSS/)
