@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
+/* ___________________________________________ */
+/* ___________________________________________ */
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+.body__no-scroll {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.grid__container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+/* ___________________________________________ */
+/* ___________________________________________ */
+a {
+  text-decoration: none;
+  display: inline;
+  color: #000;
+}
+/* ___________________________________________ */
+/* ___________________________________________ */
+header {
+  width: 100%;
+  height: 140px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+header .header__icons__container {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  background-color: #47cfac;
+}
+header .header__icons__container .icons {
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: end;
+  margin-right: 50px;
+}
+header .icons span {
+  color: #fff;
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90px;
+}
+nav .nav__logo__container {
+  margin-left: 50px;
+}
+nav .nav__logo__container img {
+  width: 220px;
+  margin-top: 10px;
+}
+nav .profile__link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+  font-family: "Roboto Mono", monospace;
+}
+nav .profile__link a {
+  color: #fff;
+  color: #000;
+  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #000;
+}
+/* ___________________________________________ */
+/* ___________________________________________ */
+.main__home {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: calc(100vh - 140px);
+  background: url("https://uc8b3c3b8ea8283c138eb6bbcc04.previews.dropboxusercontent.com/p/thumb/AA1BUNfPd_L-r0NSDUdWZYr2-gHDOkh2CXfN7qL8hNUVmI6Vo9SzsuT9nDOvcou3WX09m_gNc8kaR780Y9zFuDVluefaHPH1_qHjJ-mA8WMJtWCMWoavarYI8TC8XTLlTxXMepmcJ723V9QpqTe4Q8Ip1NgmkrHZjw4pfdUUfeorcaKCsRaqumEQ1DHlevMKCXeo1difiwv97wgEYb33ReXN8COF-YIGsFW6he1acqjRvGpBPkDofNd_Ui-1v3wOpWWp4HRWII4D2S71JunC8oza3AFPaLWI7EzM0qED17OolyDcEM3sAahy3c_3yUXTmSa3pLBowJ534RG9UFiBtJ5whYQz4kFBAuQQ1JvX_Vx6Yg/p.png?fv_content=true&size_mode=5")
+    no-repeat center/cover;
+}
+.main__home section {
+  display: grid;
+  grid-column: 2;
+  justify-items: center;
+  height: 350px;
+  margin-top: 80px;
+}
+.main__home__text {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  color: white;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+.home__main__button {
+  width: 110px;
+  height: 50px;
+  margin: 10px;
+  background-color: #47cfac;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ___________________________________________ */
+/* ___________________________________________ */
+
+.blogs__main {
+  display: grid;
+}
+.blogs__news__container {
+  background-color: #e6e9ed;
+  padding: 0 50px 40px;
+}
+
+.blogs__main__news {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr;
+  /* grid-template: 2fr / 2fr 1fr; */
+}
+.blogs__news__img__container {
+  grid-column: 1;
+}
+.blogs__news__img__container img {
+  width: 85%;
+}
+.blogs__news__info__container {
+  grid-column: 2;
+}
+.blogs__news__info__container p {
+  margin-bottom: 35px;
+}
+.blogs__button {
+  border: 1px solid #47cfac;
+  padding: 10px 15px;
+  font-size: 12px;
+  border-radius: 5px;
+  box-shadow: -2px 2px 1px 1px #47cfad80;
+}
+.blogs__posts__container {
+  padding: 0 50px 40px;
+}
+.blogs__posts__container h2 {
+  border-bottom: 1px solid #cdd2da;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.blogs__posts__container .post__container {
+  display: inline-block;
+  padding: 10px 10px 20px;
+  max-width: 30%;
+  margin-bottom: 50px;
+  border: 1px solid rgba(128, 128, 128, 0.205);
+  border-radius: 10px;
+}
+.blogs__posts__container .post__container p {
+  margin-bottom: 35px;
+}
+.blogs__posts__container .post__container img {
+  width: 100%;
+  border-radius: 5px;
+}
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #22272d;
+  border-top: 35px solid #47cfac;
+  text-align: center;
+}
+footer p {
+  color: #fff;
+  align-items: center;
+  margin-top: 30px;
+}
+/* ___________________________________________ */
+/* ___________________________________________ */
+.blogpost__img__container {
+  /* background-color: #cdd2da; */
+  padding: 0 50px 40px;
+}
+.blogpost__img__container img {
+  width: 100%;
+}
+.blogpost__main__container {
+  padding: 0 50px 40px;
+}
+.blogpost__main__container h3 {
+  border-bottom: 1px solid #cdd2da;
+  padding-bottom: 20px;
+}
+.blogpost__main__container article h1 {
+  font-size: 32px;
+}
+.contact__main__container {
+  background-color: rgba(231, 233, 237);
+  width: 100%;
+  min-height: 200px;
+}
+.display__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact__left,
+.contact__right {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  margin: 50px 0;
+}
+.contact__main__container img {
+  margin: 0 auto;
+  width: 75%;
+}
+.contact__main__container a {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+}
+/* ___________________________________________ */
+/* ___________________________________________ */
+.description__container {
+  margin: 2% 0;
+}
+.header__container {
+  width: 100%;
+  background-color: rgba(231, 233, 237);
+  padding: 75px 0px;
+}
+.about__me__container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 20px;
+  align-items: center;
+}
+.about__me__img__container img {
+  width: 100%;
+}
+.about__me__decription__container h1 {
+  font-size: 35px;
+  margin: 0;
+}
+.about__title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 25px;
+  border-bottom: 1px solid #cdd2da;
+  margin-bottom: 20px;
+}
+.text__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+}
+.text__container div {
+  padding: 10px;
+}
+.text__container p {
+  margin: 0px;
+}
+.text__grid__container {
+  display: grid;
+  grid-template-rows: 0.5fr 2fr 2fr;
+  grid-row-gap: 15px;
+}
